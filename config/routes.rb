@@ -6,6 +6,7 @@ OiaApp::Application.routes.draw do
 
   match '/signup', to: 'users#new'
   match '/signin', to: 'sessions#new'
+  match '/sessions', to: 'sessions#create'
   match '/signout', to: 'sessions#destroy', via: :delete
 
   match '/help', to: 'static_pages#help'
